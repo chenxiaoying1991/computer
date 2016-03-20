@@ -1,0 +1,1747 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+}
+ul,li{
+    list-style: none;
+}/*---------------*/
+img {
+    border: none;
+
+}
+
+.outer {
+    width: 960px;
+    height: 419px;
+    overflow: hidden;
+    position: relative;
+}
+
+.inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 419px;
+}
+
+.inner div {
+    float: left;
+    width: 960px;
+    height: 419px;
+    cursor: pointer;
+}
+.inner div li{
+    width: 960px;
+    height: 419px;
+    float: left;
+
+}
+
+.inner div li a img {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.tip{
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    overflow: hidden;
+}
+.tip li{
+    float: left;
+    margin-left: 7px;
+    width: 9px;
+    height:9px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: gray;
+
+}
+.tip li.bg{
+    background: gold;
+}
+.outer a{
+    position: absolute;
+    top:50%;
+    width: 30px;
+    height: 45px;
+    margin-top: -22.5px;
+    background: url("../img/pre.png") ;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+}
+.outer a:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.outer a.btnLeft{
+    left: 10px;
+}
+.outer a.btnRight{
+    background-position: -50px 0;
+    right:10px;
+}
+/*-------------------------*/
+a,a:target,a:hover,a:active{
+    text-decoration: none;
+}
+.box{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid gray;
+    background: -webkit-linear-gradient(top left,greenyellow, yellow, #ffe470); /*背景颜色渐变 从左上角开始按照三个颜色逐步的渐变*/
+}
+.top{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+.top .title{
+    margin-left: 335px;
+}
+.top .title li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+
+}
+.top .title a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-right:1px dashed hotpink ;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 20px 0 33px;
+    position: relative;
+}
+.top a:hover{
+    color: #ff6699;
+}
+.top .title em{
+    position: absolute;
+    top:1px;
+    left:15px;
+}
+.top .QQ{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/1雪.png") no-repeat;
+    background-position: -189px -20px;
+}
+.top .shop{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/1雪.png") no-repeat;
+    background-position: -2px -164px;
+}
+.top .pink{
+    color: #fff;
+    padding: 0 6px;
+    background: #ff6699;
+
+}
+.top .DingD{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/1雪.png") no-repeat;
+    background-position: -232px -21px;
+}
+.top .downLoad{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/1雪.png") no-repeat;
+    background-position: -171px -45px;
+}
+/*左边的盒子*/
+.leftBox{
+    width: 40px;
+    height: 100%;
+    z-index: 1001;
+    background: #ccc;
+    position: fixed;
+    top:0;
+   left:1400px;
+    border: 1px solid grey ;
+
+
+
+}
+/*------------------*/
+ .leftFixed{
+    position: fixed;
+    top:49px;
+     right: -2px;
+     z-index: 1002;
+
+}
+ .leftFixed .shopCar{
+    width:40px ;
+    height: 108px;
+    border: 1px solid grey;
+    text-align: center;
+    position: relative;
+    left:-1px;
+     background:#ccc ;
+
+}
+ .leftFixed .shopCar:hover em.whiteHua{
+
+    display: block;
+    color: whitesmoke;
+}
+.leftFixed .shopCar:hover{
+    background: hotpink;
+}
+ .leftFixed .shopCar:hover a{
+    color: white;
+}
+ .leftFixed .message{
+    position: relative;
+    top:-1px;
+    left:-1px;
+    width: 41px;
+    height: 108px;
+    border: 1px solid grey;
+    text-align: center;
+     background: #ccc;
+
+}
+ .leftFixed .message .ke{
+    background:url("../img/red_im.png")no-repeat ;
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    position: relative;
+}
+ .leftFixed .message .whiteKe{
+    background:url("../img/white_im.png")no-repeat ;
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin-top: -16px;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+}
+ .leftFixed .message:hover{
+    background: hotpink;
+
+}
+ .leftFixed .message:hover em.whiteKe{
+    display: block;
+}
+ .leftFixed .message:hover a{
+    color: white;
+}
+ .leftFixed .shopCar li.shopOne{
+    width: 17px;
+    position: relative;
+    top:5px;
+    left:12px;
+}
+ .leftFixed .shopCar .hua{
+    background:url("../img/red_cart.png")no-repeat ;
+
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    position: relative;
+}
+ .leftFixed .shopCar .whiteHua{
+    background:url("../img/white_cart.png")no-repeat ;
+    width: 18px;
+    height: 16px;
+    display: block;
+    margin-top: -16px;
+    margin-left: 10px;
+    position: relative;
+    display: none;
+}
+ .leftFixed .message li.messageOne{
+    width: 12px;
+    position: relative;
+    top:5px;
+    left:13px;
+}
+/*----------------*/
+
+.leftBox li.leftBoxThree{
+    width: 41px;
+    height: 38px;
+    border: 1px solid grey;
+    position: relative;
+    top:318px;
+    right:1px;
+
+}
+.leftBox li.leftBoxThree em.boxThree{
+    background: url("../img/red_coupon.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    display: block;
+    top:13px;
+    left:10px;
+}
+.leftBox li.leftBoxThree em.boxThree-a{
+    background: url("../img/white_coupon.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    top:-3px;
+    left:10px;
+    display: none;
+}
+.leftBox li.leftBoxThree .myPrice{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #666;;
+    position: absolute;
+    right:42px;
+    bottom: 4px;
+    display: none;
+}
+.leftBox li.leftBoxThree .myPrice a{
+    color: #fff;
+}
+.leftBox li.leftBoxThree .sanJiao{
+    background: url("../img/sanJ.png") no-repeat;
+    position: absolute;
+    right: -6px;
+    bottom: 8px;
+    width: 5px;
+    height: 11px;
+    /*border: 50px solid #fff;*/
+    /*border-color:transparent transparent transparent #fff ;*/
+    /*z-index: 1000;*/
+
+}
+.leftBox li.leftBoxThree:hover .myPrice{
+    display: block;
+}
+.leftBox li.leftBoxThree:hover{
+    background: hotpink;
+}
+.leftBox li.leftBoxThree:hover em.boxThree-a{
+    display: block;
+}
+
+.leftBox li.leftBoxFour{
+    width: 41px;
+    height: 38px;
+    border: 1px solid grey;
+    position: relative;
+    top:317px;
+    right:1px;
+}
+.leftBox li.leftBoxFour em.boxFour{
+    background: url("../img/red_like.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    display: block;
+    top:13px;
+    left:10px;
+}
+.leftBox li.leftBoxFour em.boxFour-a{
+    background: url("../img/white_like.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    top:-3px;
+    left:10px;
+    display:none;
+}
+/*----------------------------*/
+.leftBox li.leftBoxFour .myPrice{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #666;;
+    position: absolute;
+    right:42px;
+    bottom: 4px;
+    display: none;
+}
+.leftBox li.leftBoxFour .myPrice a{
+    color: #fff;
+}
+.leftBox li.leftBoxFour .sanJiao{
+    background: url("../img/sanJ.png") no-repeat;
+    position: absolute;
+    right: -6px;
+    bottom: 8px;
+    width: 5px;
+    height: 11px;
+}
+.leftBox li.leftBoxFour:hover .myPrice{
+    display: block;
+}
+/*--------------------------------*/
+.leftBox li.leftBoxFour:hover em.boxFour-a{
+    display: block;
+}
+.leftBox li.leftBoxFour:hover{
+    background: hotpink;
+}
+.leftBox li.leftBoxFive{
+    width: 41px;
+    height: 38px;
+    border: 1px solid grey;
+    position: relative;
+    top:316px;
+    right:1px;
+}
+.leftBox li.leftBoxFive em.boxFive{
+    background: url("../img/red_feedback.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    display: block;
+    top:13px;
+    left:10px;
+}
+
+.leftBox li.leftBoxFive em.boxFive-a{
+    background: url("../img/white_feedback.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    top:-3px;
+    left:10px;
+    display: none;
+}
+/*----------------------------*/
+.leftBox li.leftBoxFive .myPrice{
+    width: 85px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #666;;
+    position: absolute;
+    right:42px;
+    bottom: 4px;
+    display: none;
+}
+.leftBox li.leftBoxFive .myPrice a{
+    color: #fff;
+}
+.leftBox li.leftBoxFive .sanJiao{
+    background: url("../img/sanJ.png") no-repeat;
+    position: absolute;
+    right: -6px;
+    bottom: 8px;
+    width: 5px;
+    height: 11px;
+}
+.leftBox li.leftBoxFive:hover .myPrice{
+    display: block;
+}
+/*--------------------------------*/
+.leftBox li.leftBoxFive:hover em.boxFive-a{
+    display: block;
+}
+.leftBox li.leftBoxFive:hover{
+    background: hotpink;
+}
+.leftBox li.leftBoxSix{
+    width: 41px;
+    height: 38px;
+    border: 1px solid grey;
+    position: relative;
+    top:416px;
+    right:1px;
+}
+.leftBox li.leftBoxSix em.boxSix{
+    background: url("../img/red_up_arrow.png") no-repeat;
+    width: 18px;
+    height: 16px;
+    position: relative;
+    display: block;
+    top:13px;
+    left:10px;
+}
+/*-----------------*/
+.leftBox li.leftBoxSix .upper {
+    width: 41px;
+    height: 38px;
+    border: 1px solid grey;
+    position: relative;
+    bottom: 1px;
+    right: 1px;
+    color: hotpink;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: SimSun, "Microsoft YaHei";
+    text-align: center;
+    display: none;
+}
+.leftBox li.leftBoxSix:hover .upper{
+    display: block;
+}
+.leftBox li.leftBoxSix:hover em.boxSix{
+    display: none;
+}
+/*-------------------*/
+
+/*第二个盒子*/
+.second{
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+}
+.topCenter{
+    width: 1200px;
+    margin: auto;
+}
+.topCenter .titleP img{
+    margin-top: 38px;
+}
+.topCenter .select{
+    width: 520px;
+    position: absolute;
+    top: 20px;
+    left: 450px;
+}
+.topCenter .select a{
+    text-decoration: none;
+}
+.topCenter .select span.selectOneBoBy{
+    display: block;
+    float: left;
+    width: 55px;
+    height: 26px;
+    color: #fff;
+    line-height: 26px;
+    background:#ff6699 ;
+    text-align: center;
+
+}
+.topCenter .select span.selectOneShop{
+    display: block;
+    float: left;
+    width: 55px;
+    height: 26px;
+    line-height: 26px;
+    background:gainsboro ;
+    text-align: center;
+
+}
+.topCenter .select .selectCenter{
+    position: absolute;
+    top:26px;
+    left:0;
+}
+.topCenter .select .selectCenter .selectInput{
+    width: 445px;
+    height: 31px;
+    border: 2px solid #ff6699;
+    outline: none;
+    padding-left: 5px;
+}
+.topCenter .select .selectCenter a{
+    position: absolute;
+    top: 0;
+    right:-70px;
+    display: block;
+    width: 75px;
+    height: 31px;
+    background: #ff6699;
+
+}
+.topCenter .select .selectCenter a img{
+    margin: 7px 27px 5px 27px ;
+}
+.topCenter .select .selectLast{
+    position: absolute;
+    top:65px;
+    left:0;
+}
+.topCenter .select .selectLast a{
+    margin-right: 3px;
+}
+.zhanwei{
+    width: 100%;
+    height: 49px;
+}
+.topList{
+    width: 100%;
+    height: 49px;
+    line-height: 49px;
+    background: #fff;
+    border-bottom: 1px solid hotpink;
+    position: relative;
+    z-index: 1000;
+    /*position: fixed;*/
+    /*top:139px;*/
+    /*left:0;*/
+
+
+}
+.topList .topListUl {
+    width: 1200px;
+    height:49px;
+    margin: auto;
+}
+.topList .topListUl li{
+    display: inline-block;
+    height: 47px;
+    border-bottom: 2px solid transparent;
+}
+.topList .topListUl li:hover{
+    border-bottom: 2px solid hotpink;
+}
+.topList .topListUl li:hover a{
+    color: #ff6699;
+}
+.topList .topListUl li a:hover{
+    /*display: none;*/
+    /*border-bottom: 2px solid hotpink;*/
+}
+
+
+.topList .topListUl li a{
+    margin-right: 12px;
+    float: left;
+    font-size: 15px;
+    padding: 0 15px;
+    text-decoration: none;
+
+
+}
+.topList .topListUl li.more{
+    position: relative;
+}
+.topList .topListUl li a .down{
+    width: 0;
+    height: 0;
+    border-bottom: none;
+    display: inline-block;
+    position: absolute;
+    top:25px;
+    left:640px;
+    border: 3px solid dimgray;
+    border-color:dimgray transparent transparent transparent ;
+
+
+}
+.topList .topListUl li.more ul.moreY {
+    position: absolute;
+    top:49px;
+    left:-27px;
+    width: 120px;
+    background:lightgoldenrodyellow;
+    display: none;
+
+}
+.topList .topListUl li.more ul.moreY li{
+    height: 26px;
+    line-height: 26px;
+    width: 120px;
+    overflow: hidden;
+    border-bottom: none;
+
+}
+.topList .topListUl li.more:hover .moreY{
+    display: block;
+    z-index: 10000;
+}
+.topList .topListUl li.more ul.moreY li:hover{
+    background: yellow;
+
+}
+.topList .topListUl li.more ul.moreY a{
+    margin-left: 28px;
+    color: #000;
+
+}
+.topList .topListUl li.more ul.moreY a:hover{
+    color: #ff6699;
+}
+.centerBox{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.centerBox-one{
+    height: 572px;
+}
+.centerBox-one .one-left{
+    width: 238px;
+    height: 572px;
+    border: 1px solid gainsboro;
+    float: left;
+
+}
+.centerBox-one .one-left .one-leftUl{
+    width: 198px;
+    margin: 0 auto;
+    /*border-bottom: 1px dashed hotpink;*/
+}
+.centerBox-one .one-left .one-leftUl a:hover{
+    text-decoration: none;
+    color: #ff6699;
+
+}
+.centerBox-one .one-left .one-leftUl a.bg{
+    color: #ff6699;
+}
+.centerBox-one .one-left .one-leftUl a.bg{
+    color: #ff6699;
+}
+/*第一块li*/
+.centerBox-one .one-left .one-leftUl .Day{
+    width: 218px;
+    padding: 9px 0;
+    position: relative;
+    /*border-bottom: 1px dashed hotpink;*/
+}
+.centerBox-one .one-left .one-leftUl .Day h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+}
+.centerBox-one .one-left .one-leftUl .Day .DayP{
+
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .Day .DayP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+
+}
+/*第一块里面的div盒子*/
+.centerBox-one .one-left .one-leftUl .Day .DayD{
+    position: absolute;
+    top: -1px;
+    left:218px;
+    padding: 9px 0;
+    border: 1px solid gainsboro;
+    border-left: none;
+    width: 330px;
+    display: none;
+    background: #fff;
+    z-index: 200;
+}
+.centerBox-one .one-left .one-leftUl .Day:hover .DayD{
+    display: block;
+}
+.centerBox-one .one-left .one-leftUl .Day .DayD h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+
+}
+.centerBox-one .one-left .one-leftUl .Day .DayD .DayDP{
+    /*z-index: 200;*/
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .Day .DayD .DayDP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+    color: #666;
+
+}
+.centerBox-one .one-left .one-leftUl .Day .DayD .DayDP a:hover{
+    color: #ff6699;
+}
+
+
+/*第二块li*/
+.centerBox-one .one-left .one-leftUl .popular{
+    width:217px;
+    padding: 9px 0;
+    border-top: 1px dashed hotpink;
+    /*border-top-width:190px ;*/
+    position: relative;
+    z-index: 200;
+
+
+}
+.centerBox-one .one-left .one-leftUl .popular h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+}
+.centerBox-one .one-left .one-leftUl .popular .popularP{
+
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+}
+.centerBox-one .one-left .one-leftUl .popular .popularP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+}
+/*第二块盒子的div*/
+.centerBox-one .one-left .one-leftUl .popular .popularD{
+    position: absolute;
+    top: -1px;
+    left:218px;
+    padding: 9px 0;
+    border: 1px solid gainsboro;
+    border-left: none;
+    width: 330px;
+    display: none;
+    background: #fff;
+}
+.centerBox-one .one-left .one-leftUl .popular:hover .popularD{
+    display: block;
+}
+.centerBox-one .one-left .one-leftUl .popular .popularD h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 14px;
+
+}
+.centerBox-one .one-left .one-leftUl .popular .popularD .popularDP{
+
+    line-height: 24px;
+    padding: 6px 0;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .popular .popularD .popularDP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+    color: #666;
+
+}
+.centerBox-one .one-left .one-leftUl .popular .popularD .popularDP a:hover{
+    color: #ff6699;
+}
+/*第三块li*/
+.centerBox-one .one-left .one-leftUl .fashion{
+    width: 217px;
+    padding: 9px 0;
+    border-top: 1px dashed hotpink;
+    position: relative;
+    z-index: 200;
+
+}
+.centerBox-one .one-left .one-leftUl .fashion h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionP{
+
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+}
+/*第三块里面的div*/
+.centerBox-one .one-left .one-leftUl .fashion .fashionD{
+    position: absolute;
+    top: -1px;
+    left:218px;
+    padding: 9px 0;
+    border: 1px solid gainsboro;
+    border-left: none;
+    width: 330px;
+    display: none;
+    background: #fff;
+}
+.centerBox-one .one-left .one-leftUl .fashion:hover .fashionD{
+    display: block;
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionD h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 14px;
+
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionD .fashionDP{
+
+    line-height: 24px;
+    padding: 6px 0;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionD .fashionDP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+    color: #666;
+
+}
+.centerBox-one .one-left .one-leftUl .fashion .fashionD .fashionDP a:hover{
+    color: #ff6699;
+}
+
+
+
+/*第四块*/
+.centerBox-one .one-left .one-leftUl .wear{
+    width: 217px;
+    padding: 9px 0;
+    border-top: 1px dashed hotpink;
+    position: relative;
+    z-index: 200;
+}
+.centerBox-one .one-left .one-leftUl .wear h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+}
+.centerBox-one .one-left .one-leftUl .wear .wearP{
+
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+}
+.centerBox-one .one-left .one-leftUl .wear .wearP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+}
+/*第四块里面的盒子*/
+.centerBox-one .one-left .one-leftUl .wear .wearD{
+    position: absolute;
+    top: -1px;
+    left:218px;
+    padding: 9px 0;
+    border: 1px solid gainsboro;
+    border-left: none;
+    width: 330px;
+    display: none;
+    background: #fff;
+}
+.centerBox-one .one-left .one-leftUl .wear:hover .wearD{
+    display: block;
+}
+.centerBox-one .one-left .one-leftUl .wear .wearD h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 14px;
+
+}
+.centerBox-one .one-left .one-leftUl .wear .wearD .wearDP{
+
+    line-height: 24px;
+    padding: 6px 0;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .wear .wearD .wearDP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+    color: #666;
+}
+.centerBox-one .one-left .one-leftUl .wear .wearD .wearDP a:hover{
+    color: #ff6699;
+}
+
+/*第五个li*/
+.centerBox-one .one-left .one-leftUl .change{
+    width: 217px;
+    padding: 9px 0;
+    border-top: 1px dashed hotpink;
+    position: relative;
+    z-index: 200;
+}
+.centerBox-one .one-left .one-leftUl .change h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 16px;
+}
+.centerBox-one .one-left .one-leftUl .change .changeP{
+
+    line-height: 24px;
+    padding-top: 5px;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+}
+.centerBox-one .one-left .one-leftUl .change .changeP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+}
+/*第五个里面的div*/
+.centerBox-one .one-left .one-leftUl .change .changeD{
+    position: absolute;
+    top: -1px;
+    left:218px;
+    padding: 9px 0;
+    border: 1px solid gainsboro;
+    border-left: none;
+    width: 330px;
+    display: none;
+    background: #fff;
+}
+.centerBox-one .one-left .one-leftUl .change:hover .changeD{
+    display: block;
+}
+.centerBox-one .one-left .one-leftUl .change .changeD h3 a{
+    font-family: SimSun, "Microsoft YaHei";
+    height: 18px;
+    font-size: 14px;
+
+}
+.centerBox-one .one-left .one-leftUl .change .changeD .changeDP{
+
+    line-height: 24px;
+    padding: 6px 0;
+    font-family: SimSun, "Microsoft YaHei";
+    overflow: hidden;
+
+}
+.centerBox-one .one-left .one-leftUl .change .changeD .changeDP a{
+    font-size: 12px;
+    font-family: SimSun, "Microsoft YaHei";
+    margin-right: 14px;
+    float: left;
+    color: #666;
+}
+.centerBox-one .one-left .one-leftUl .change .changeD .changeDP a:hover{
+    color: #ff6699;
+}
+
+.centerBox .centerBox-one .one-right{
+    height: 145px;
+    margin-top: 9px;
+
+
+}
+/*第一个div的图片5张*/
+.centerBox .centerBox-one .one-right img{
+    margin-left: 10px;
+    float: left;
+}
+
+.centerBox .centerBox-two{
+    height: 420px;
+    margin-top: 40px;
+}
+
+.centerBox-two .centerBox-twoTop h2{
+    font-family: SimSun, "Microsoft YaHei";
+    font-size: 20px;
+    color: darkslategray;
+}
+.centerBox-two .centerBox-twoTop h2 span{
+    color: #666;
+    font-family: SimSun, "Microsoft YaHei";
+    font-weight: normal;
+
+}
+.centerBox-two .new{
+    position: relative;
+    top:-20px;
+    width: 940px;
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+    background: url("../img/2雪.png")no-repeat 101% -177px;
+    border-bottom: 1px solid #ccc;
+}
+.centerBox-two .new a{
+    text-decoration: none;
+}
+.centerBox-two .new a:hover{
+    color: #ff6699;
+}
+/*图片*/
+.centerBox-two .centerBox-twoLeft{
+    /*margin-left: 20px;*/
+    width: 386px;
+    float: left;
+
+}
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftOne{
+    width: 260px;
+    height: 376px;
+    float: left;
+    margin-right: 2px;
+}
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftOne img{
+    width: 100%;
+    height: 100%;
+}
+
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftTwo{
+    width: 124px;
+    float: left;
+}
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftTwo li{
+    width: 124px;
+    height: 124px;
+}
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftTwo li img{
+    width: 100%;
+    height: 100%;
+}
+.centerBox-two .centerBox-twoLeft .centerBox-twoLeftTwo li.cen{
+    margin: 2px 0;
+}
+/*上面第三个盒子*/
+.centerBox .centerBox-three{
+    margin-top:40px;
+}
+.centerBox-three .centerBox-threeTop h2{
+    font-family: SimSun, "Microsoft YaHei";
+    font-size: 20px;
+    color: darkslategray;
+}
+.centerBox-three .centerBox-threeTop h2 span{
+    color: #666;
+    font-family: SimSun, "Microsoft YaHei";
+    font-weight: normal;
+
+
+}
+.centerBox-three .new{
+    position: relative;
+    top:-5px;
+    width: 990px;
+    float: right;
+    border-bottom: 1px solid #ccc;
+}
+.centerBox-three .centerBox-threePicture{
+    margin-top: 20px;
+    margin-left: -18px;
+}
+.centerBox-three .centerBox-threePicture a{
+    display: inline-block;
+    width: 183px;
+    height: 183px;
+    margin-left: 17px;
+}
+.centerBox-three .centerBox-threePicture a img{
+
+    width: 100%;
+    height: 100%;
+}
+/*上面第四个盒子*/
+.centerBox .centerBox-four{
+    margin-top: 40px;
+
+}
+.centerBox-four .centerBox-fourOne h2{
+    float: left;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: SimSun, "Microsoft YaHei";
+}
+.centerBox-four .centerBox-fourOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-four .centerBox-fourOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-four .centerBox-fourOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 101% -177px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 10px;
+
+}
+.centerBox-four .centerBox-fourOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*四个盒子的第二个盒子*/
+.centerBox-four .centerBox-fourTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+    height: 870px;
+}
+.centerBox-four .centerBox-fourTwo-one{
+    margin-left: 20px;
+    padding-bottom: 38px;
+    width: 224px;
+    float: left;
+
+
+}
+.centerBox-four .centerBox-fourTwo-one li.fourL{
+    margin-top: 15px;
+    /*margin-bottom: 2px;*/
+    line-height: 20px;
+}
+.centerBox-four .centerBox-fourTwo-one li .money{
+    color: #ff6699;
+    font-size: 18px;
+    font-family: SimSun, "Microsoft YaHei";
+    font-weight: bold;
+}
+.centerBox-four .centerBox-fourTwo-one li .heart{
+    float: right;
+    color: grey;
+    background: url("../img/2雪.png") no-repeat 0 -22px;
+    padding-left: 20px;
+}
+.centerBox-four .centerBox-fourTwo-one li.fourT a{
+    font-weight: normal;
+    font-family: SimSun, "Microsoft YaHei";
+    color: grey;
+    text-decoration: none;
+    /*background: -webkit-linear-gradient(top left,greenyellow, yellow, #68b742); /!*背景颜色渐变 从左上角开始按照三个颜色逐步的渐变*!/*/
+
+}
+.centerBox-four .centerBox-fourTwo-one li.fourT a:hover{
+    color: #ff6699;
+
+}
+/*第五个盒子*/
+/*.centerBox .centerBox-five{*/
+/*margin-top: 40px;*/
+
+/*}*/
+.centerBox-five .centerBox-fiveOne h2{
+    float: left;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: SimSun, "Microsoft YaHei";
+}
+.centerBox-five .centerBox-fiveOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-five .centerBox-fiveOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-five .centerBox-fiveOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 101% -177px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 10px;
+
+}
+.centerBox-five .centerBox-fiveOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*第五个第二个盒子*/
+
+.centerBox-five .centerBox-fiveTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+    height: 375px;
+}
+.centerBox-five .centerBox-fiveTwo .centerBox-fiveTwo-one{
+    width: 386px;
+    margin-left: 20px;
+    float: left;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveImg{
+    height: 257px;
+    overflow: hidden;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveImg img{
+    width: 100%;
+    height: 100%;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn{
+    margin-top: 15px;
+    line-height: 24px;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li .deSire{
+    color: #ff6699;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li .deSire b{
+    font-size: 20px;
+    font-family: SimSun, "Microsoft YaHei";
+
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li .oldPrice{
+    margin-left: 30px;
+    color: darkgray;
+    text-decoration: line-through;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li.chanel a{
+    font-size: 14px;
+    color: darkslategray;
+    text-decoration: none;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li.chanel a:hover{
+    color: #ff6699;
+}
+.centerBox-five .centerBox-fiveTwo-one .centerBox-fiveIn li.fish{
+    color: grey;
+}
+/*第六个盒子*/
+.centerBox-six .centerBox-sixOne{
+    margin-top: 40px;
+}
+.centerBox-six .centerBox-sixOne h2{
+    float: left;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: SimSun, "Microsoft YaHei";
+}
+.centerBox-six .centerBox-sixOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-six .centerBox-sixOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-six .centerBox-sixOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 101% -177px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 10px;
+
+}
+.centerBox-six .centerBox-sixOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*第二个盒子*/
+.centerBox-six .centerBox-sixTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+    height: 528px;
+}
+.centerBox-six .centerBox-sixTwo .centerBox-sixTwo-one{
+    margin-left: 20px;
+    float: left;
+    width: 386px;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixImg{
+    height: 386px;
+    overflow: hidden;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixImg img{
+    width: 100%;
+    height: 100%;
+}
+/*第二个盒子的第一个*/
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn{
+    margin-top: 15px;
+    line-height: 24px;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li .deSire b{
+    color: #ff6699;
+    font-size: 18px;
+    font-family: SimSun, "Microsoft YaHei";
+    /*font-style: normal;*/
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li .oldPrice{
+    padding-left: 20px;
+    color: grey;
+    text-decoration: line-through;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li.chanel a{
+    text-decoration: none;
+    font-size: 14px;
+    color:darkslategray;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li.chanel a:hover{
+    color: #ff6699;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li.fish{
+    color: grey;
+    overflow: hidden;
+    height: 50px;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li.sixLast{
+    height: 24px;
+    background: url("../img/2雪.png") no-repeat 0 -1px;
+    padding-left: 30px;
+}
+.centerBox-six .centerBox-sixTwo-one .centerBox-sixIn li.sixLast a{
+    padding-right: 10px;
+    color: #ff6699;
+    text-decoration: none;
+}
+/*第七个盒子*/
+.centerBox .centerBox-seven{
+    margin-top: 40px;
+}
+.centerBox-seven .centerBox-sevenOne h2{
+    float: left;
+    font-size: 18px;
+    background-color: #fff;
+}
+.centerBox-seven .centerBox-sevenOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-seven .centerBox-sevenOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-seven .centerBox-sevenOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 101% -177px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 10px;
+
+}
+.centerBox-seven .centerBox-sevenOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*第二个盒子*/
+.centerBox-seven .centerBox-sevenTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.centerBox-seven .centerBox-sevenTwo .sevenAll{
+    /*height: 41px;*/
+    text-align: center;
+}
+.centerBox-seven .centerBox-sevenTwo .sevenAll li.europe{
+    color: #ff6699;
+    border-bottom: 2px solid hotpink;
+}
+.centerBox-seven .centerBox-sevenTwo .sevenAll div{
+    border-bottom: 2px solid transparent;
+}
+.centerBox-seven .centerBox-sevenTwo .sevenAll li:hover{
+    border-bottom: 2px solid hotpink;
+}
+.centerBox-seven .centerBox-sevenTwo .sevenAll li{
+    display: inline-block;
+    font-family: SimSun, "Microsoft YaHei";
+    font-size: 16px;
+    margin: 0 20px 20px 20px;
+    color: #515151;
+    cursor: pointer;
+}
+.centerBox-seven .centerBox-sevenTwo div{
+    display: none;
+}
+.centerBox-seven .centerBox-sevenTwo div.europe{
+    display: block;
+}
+.centerBox-seven .centerBox-sevenTwo div img{
+    margin-left: 18px;
+}
+/*第八个盒子*/
+.centerBox .centerBox-eight{
+    margin-top: 40px;
+    height: 509px;
+}
+.centerBox-eight .centerBox-eightOne h2{
+    float: left;
+    font-size: 18px;
+    background-color: #fff;
+}
+.centerBox-eight .centerBox-eightOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-eight .centerBox-eightOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-eight .centerBox-eightOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 101% -177px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 10px;
+
+}
+.centerBox-eight .centerBox-eightOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*第二个盒子*/
+.centerBox-eight .centerBox-eightTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.centerBox-eight .centerBox-eightTwo .eightAll{
+    /*height: 41px;*/
+    text-align: center;
+}
+.centerBox-eight .centerBox-eightTwo .eightAll li.euk{
+    color: #ff6699;
+    border-bottom: 2px solid hotpink;
+}
+.centerBox-eight .centerBox-eightTwo .eightAll li{
+    border-bottom: 2px solid transparent;
+}
+.centerBox-eight .centerBox-eightTwo .eightAll li:hover{
+    border-bottom: 2px solid hotpink;
+}
+.centerBox-eight .centerBox-eightTwo .eightAll li{
+    display: inline-block;
+    font-family: SimSun, "Microsoft YaHei";
+    font-size: 16px;
+    margin: 0 20px 20px 20px;
+    color: #515151;
+    cursor: pointer;
+}
+
+/*第三个盒子*/
+
+.centerBox-eight .centerBox-eightTwo div .noOne{
+    float: left;
+    position: relative;
+}
+.centerBox-eight .centerBox-eightTwo div.no{
+     display: none;
+
+
+ }
+.centerBox-eight .centerBox-eightTwo div.euk{
+    display:block;
+}
+.centerBox-eight .centerBox-eightTwo div div{
+    margin-left: 20px;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo{
+    padding-top: 15px;
+    text-align: center;
+    line-height: 25px;
+    margin-left: -15px;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo .home a{
+    font-size: 20px;
+    color: #666;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo .home a:hover{
+    color: hotpink;
+    text-decoration: none;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo .words{
+    color: grey;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo .score span{
+    margin-left: 15px;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .wo .score em{
+    font-style: normal;
+    color: hotpink;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .topBox{
+    width: 386px;
+    opacity: 0.5;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left:-20px;
+    height: 333px;
+    background-color: #333;
+    filter: alpha(opacity=50);
+}
+.follow a,.go a{
+    font-size: 16px;
+    color:#fff ;
+
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .follow{
+    position: absolute;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    left: 117px;
+    top: 80px;
+    font-size: 16px;
+    font-family: SimSun, "Microsoft YaHei";
+    background: yellowgreen;
+}
+.centerBox-eight .centerBox-eightTwo div .noOne .go{
+    position: absolute;
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    left: 117px;
+    top: 150px;
+    font-size: 16px;
+    font-family: SimSun, "Microsoft YaHei";
+    background: yellowgreen;
+}
+/*第九个盒子*/
+.centerBox .centerBox-nine{
+    margin-top: 40px;
+    height: 400px;
+}
+.centerBox-nine .centerBox-nineOne h2{
+    float: left;
+    font-size: 18px;
+    background-color: #fff;
+}
+.centerBox-nine .centerBox-nineOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-nine .centerBox-nineOne .newTwo{
+
+    border-bottom: 1px solid gainsboro;
+    min-width: 700px;
+    height: 20px;
+    text-align: right;
+}
+/*第二个盒子*/
+.centerBox-nine .centerBox-nineTwo{
+    margin-left: -20px;
+    margin-top: 20px;
+}
+.centerBox-nine .centerBox-nineTwo .nineUl li{
+    float: left;
+    margin-left: 20px;
+
+}
+/*第十个盒子*/
+.centerBox .centerBox-ten{
+    margin-top: 40px;
+
+}
+.centerBox-ten .centerBox-tenOne h2{
+    float: left;
+    font-size: 20px;
+    background-color: #fff;
+    font-family: SimSun, "Microsoft YaHei";
+}
+.centerBox-ten .centerBox-tenOne h2 .goodLook{
+    font-weight: normal;
+    font-size: 12px;
+    color: #999;
+    padding: 0 5px;
+}
+.centerBox-ten .centerBox-tenOne .newTwo a{
+    text-decoration: none;
+    color: #515151;
+}
+.centerBox-ten .centerBox-tenOne .newTwo{
+    background: url("../img/2雪.png") no-repeat 1178px -202px;
+    border-bottom: 1px solid gainsboro;
+    text-align: right;
+    padding: 3px 0;
+    padding-right: 17px;
+
+}
+.centerBox-ten .centerBox-tenOne .newTwo a:hover{
+    color: #ff6699;
+}
+/*四个盒子的第二个盒子*/
+.centerBox-ten .centerBox-tenTwo{
+    margin-top: 20px;
+    margin-left: -20px;
+    height: 870px;
+}
+.centerBox-ten .centerBox-tenTwo-one{
+    margin-left: 20px;
+    padding-bottom: 38px;
+    width: 224px;
+    float: left;
+    overflow: hidden;
+
+
+}
+.centerBox-ten .centerBox-tenTwo-one li.tenL{
+    margin-top: 15px;
+    /*margin-bottom: 2px;*/
+    line-height: 20px;
+}
+.centerBox-ten .centerBox-tenTwo-one li .money{
+    color: #ff6699;
+    font-size: 18px;
+    font-family: SimSun, "Microsoft YaHei";
+    font-weight: bold;
+}
+.centerBox-ten .centerBox-tenTwo-one li .heart{
+    float: right;
+    color: grey;
+    background: url("../img/2雪.png") no-repeat 0 -22px;
+    padding-left: 20px;
+}
+.centerBox-ten .centerBox-tenTwo-one li.tenT a{
+    font-weight: normal;
+    font-family: SimSun, "Microsoft YaHei";
+    color: grey;
+    text-decoration: none;
+    /*background: -webkit-linear-gradient(top left,greenyellow, yellow, #68b742); /!*背景颜色渐变 从左上角开始按照三个颜色逐步的渐变*!/*/
+
+}
+.centerBox-ten .centerBox-tenTwo-one li.tenT a:hover{
+    color: #ff6699;
+
+}
+.centerBox-ten .centerBox-tenTwo-one ul a.big img{
+    height: 340px;
+}
+/*最后*/
+.boxLast{
+    /*background: url("../img/L.jpg");*/
+    width: 1200px;
+    height: 100px;
+    border: 1px solid gold;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.lastLast{
+    width: 100%;
+    background: #ccc;
+    height: 300px;
+    border: 1px solid #ccc;
+}
